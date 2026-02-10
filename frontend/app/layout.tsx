@@ -18,10 +18,10 @@ const spaceGrotesk = Space_Grotesk({
 
 export const metadata: Metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000'),
-  title: 'Your Name | AI Engineer & Researcher',
+  title: 'Fatima Mumtaz | AI Engineer & Researcher',
   description: 'AI Engineer specializing in Computer Vision, Deep Learning, and Production ML Systems',
   keywords: ['AI Engineer', 'Machine Learning', 'Computer Vision', 'Deep Learning', 'Software Engineer'],
-  authors: [{ name: 'Your Name' }],
+  authors: [{ name: 'Fatima Mumtaz' }],
   openGraph: {
     title: 'Your Name | AI Engineer',
     description: 'AI Engineer specializing in Computer Vision and ML Systems',
