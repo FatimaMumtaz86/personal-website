@@ -11,11 +11,12 @@ const skillCategories = [
   },
   {
     title: 'Programming & Tools',
-    skills: ['Python', 'TypeScript', 'C++', 'Git', 'Docker', 'Linux']
+    skills: ['Python', 'TypeScript', 'C++', 'Git', 'Docker'
+    ]
   },
   {
     title: 'Backend & Infrastructure',
-    skills: ['FastAPI', 'Node.js', 'PostgreSQL', 'Redis', 'AWS', 'CI/CD']
+    skills: ['FastAPI', 'Node.js', 'PostgreSQL', 'CI/CD']
   },
   {
     title: 'Frontend & UI',

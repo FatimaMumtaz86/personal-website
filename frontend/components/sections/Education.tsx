@@ -18,20 +18,34 @@ const education = [
   },
 ]
 
-// const achievements = [
-//   {
-//     title: 'Dean\'s List',
-//     description: 'Academic excellence recognition',
-//   },
-//   {
-//     title: 'Hackathon Winner',
-//     description: 'First place in AI/ML competition',
-//   },
-//   {
-//     title: 'Research Publication',
-//     description: 'Published paper in computer vision',
-//   },
-// ]
+const achievements = [
+  {
+    title: 'PR team member in SperComp\'24',
+    description: 'Acative PR team member in Supercomp\'24 at BUCIS'
+  },
+  {
+    title: 'Marketing team member in Teknofest\'26',
+    description: 'Active marketing team member in Teknofest\'26 at Bahria University'
+  },
+  {
+    title: 'Probattle\'26 Participant',
+    description: 'Participated in ML module at Probattle\'26',
+  },
+
+  {
+    title: 'Procom\'25 Participant',
+    description: 'Participation in Debug or Die at Procom\'25',
+  },
+
+  {
+    title: 'Procom\'24 Participant',
+    description: 'Participation in Pseudo wars at Procom\'24',
+  },
+  //   {
+  //   title: 'MUN ',
+  //   description: 'Participated in ML module at Probattle\'26',
+  // },
+]
 
 export default function Education() {
   const ref = useRef(null)
@@ -75,7 +89,7 @@ export default function Education() {
                   <ul className="space-y-2">
                     {edu.details.map((item, i) => (
                       <li key={i} className="text-zinc-400 flex items-start gap-2">
-                        <span className="text-blue-400 mt-1.5">•</span>
+                        <span className="text-blue-400 mt-1.5">&bull;</span>
                         <span>{item}</span>
                       </li>
                     ))}
@@ -84,8 +98,7 @@ export default function Education() {
               </div>
             </motion.div>
           ))}
-{/* 
-          Achievements
+          {/* Achievements */}
           <motion.div
             initial={{ opacity: 0, y: 40 }}
             animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 40 }}
@@ -106,7 +119,7 @@ export default function Education() {
                 </div>
               ))}
             </div>
-          </motion.div> */}
+          </motion.div>
         </div>
       </div>
     </section>

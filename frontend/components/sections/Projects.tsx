@@ -20,20 +20,36 @@ const projects = [
     github: 'https://github.com/FatimaMumtaz86/fake-news-detection',
     demo: null,
  },
-//   {
-//     title: 'ML Model Serving Infrastructure',
-//     description: 'Scalable microservices architecture for serving ML models at scale. Handles 10k+ requests/min with automatic scaling and monitoring.',
-//     tags: ['FastAPI', 'Redis', 'Docker', 'Kubernetes'],
-//     github: 'https://github.com/yourusername/ml-serving',
-//     demo: 'https://demo.example.com',
-//   },
-//   {
-//     title: 'Vision Transformer Fine-tuning Framework',
-//     description: 'Modular framework for fine-tuning Vision Transformers on custom datasets. Includes data augmentation pipelines and experiment tracking.',
-//     tags: ['PyTorch', 'Transformers', 'MLflow', 'DVC'],
-//     github: 'https://github.com/yourusername/vit-framework',
-//     demo: null,
-//   },
+
+{
+  title: 'COVID-19 Data Analysis Dashboard',
+  description: 'Interactive Power BI dashboard for analyzing global COVID-19 trends. Combines Python-based data preprocessing with Power BI visualizations to explore confirmed cases, deaths, recoveries, and active cases across countries and WHO regions.',
+  tags: ['Power BI', 'Python', 'Pandas', 'DAX', 'Data Visualization'],
+  github: 'https://github.com/FatimaMumtaz86/covid-19-powerbi-dashboard',
+  demo:null,
+},
+{
+  title: 'Face Clustering using PCA & Unsupervised Learning',
+  description: 'End-to-end face clustering pipeline using the LFW dataset. Combines PCA-based feature extraction with K-Means, Hierarchical Clustering, DBSCAN, and SOM. Includes clustering evaluation metrics and Explainable AI (LIME, SHAP) for interpretability.',
+  tags: [
+    'Machine Learning',
+    'Computer Vision',
+    'Unsupervised Learning',
+    'PCA',
+    'Clustering',
+    'Explainable AI'
+  ],
+  github: 'https://github.com/FatimaMumtaz86/face-clustering-pca',
+  demo: null,
+}
+,
+{
+  title: 'Gross Profit Analysis Dashboard',
+  description: 'Interactive Power BI dashboard for analyzing Plant Co.’s gross profit performance. Provides YTD vs PYTD comparisons, regional insights, product category analysis, monthly trends, and profitability segmentation to support data-driven decision-making.',
+  tags: ['Power BI', 'DAX', 'Power Query', 'Financial Analysis', 'Data Visualization'],
+  github: 'https://github.com/FatimaMumtaz86/gross-profit-powerbi-dashboard',
+  demo:null,
+}
 ]
 
 export default function Projects() {
