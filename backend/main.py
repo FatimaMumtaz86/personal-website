@@ -17,11 +17,16 @@ app = FastAPI(
 )
 
 # CORS Configuration
-FRONTEND_URL = os.getenv("FRONTEND_URL", "http://localhost:3000")
+def get_allowed_origins() -> list[str]:
+    env_origins = os.getenv("FRONTEND_URL", "")
+    origins = [origin.strip() for origin in env_origins.split(",") if origin.strip()]
+    origins.extend(["http://localhost:3000", "http://localhost:3001"])
+    # Preserve order while removing duplicates
+    return list(dict.fromkeys(origins))
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=[FRONTEND_URL, "http://localhost:3000"],
+    allow_origins=get_allowed_origins(),
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],

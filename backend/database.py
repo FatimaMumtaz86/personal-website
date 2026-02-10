@@ -7,7 +7,9 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # Database URL from environment variable
-DATABASE_URL = os.getenv("DATABASE_URL", "mysql+mysqlconnector://portfolio_user:pinki123@localhost:3306/portfolio_db")
+DATABASE_URL = os.getenv("DATABASE_URL")
+if not DATABASE_URL:
+    raise RuntimeError("DATABASE_URL is not set")
 
 # Create engine
 engine = create_engine(DATABASE_URL, echo=True)
