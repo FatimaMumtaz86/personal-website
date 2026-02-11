@@ -24,8 +24,8 @@ const achievements = [
     description: 'Acative PR team member in Supercomp\'24 at BUCIS'
   },
   {
-    title: 'Marketing team member in Teknofest\'26',
-    description: 'Active marketing team member in Teknofest\'26 at Bahria University'
+    title: 'Marketing team member in Teknofest Pre Event\'25',
+    description: 'Active marketing team member in Teknofest\'25 at Bahria University'
   },
   {
     title: 'Probattle\'26 Participant',
@@ -41,10 +41,14 @@ const achievements = [
     title: 'Procom\'24 Participant',
     description: 'Participation in Pseudo wars at Procom\'24',
   },
-  //   {
-  //   title: 'MUN ',
-  //   description: 'Participated in ML module at Probattle\'26',
-  // },
+    {
+    title: 'Youth Model National Assembly- Special edition 2025 participant ',
+    description: 'Participated in Youth Model National Assembly- Special edition 2025  at Arts Council of pakistan Karachi',
+  },
+      {
+    title: '32nd International Kangroo Mathematics Contest 2022 ',
+    description: 'Participated in 32nd International Kangroo Mathematics Contest 2022 and winning Kangroo Happy cube',
+  },
 ]
 
 export default function Education() {
