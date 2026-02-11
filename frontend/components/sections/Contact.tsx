@@ -40,7 +40,7 @@ export default function Contact() {
       setFormData({ name: '', email: '', message: '' })
       
       // Reset success message after 3 seconds
-      setTimeout(() => setStatus('idle'), 3000)
+      setTimeout(() => setStatus('idle'), 9000)
     } catch (error) {
       setStatus('error')
       setErrorMessage('Failed to send message. Please try again or email directly.')
